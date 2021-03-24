@@ -1,0 +1,82 @@
+html {
+    display: flex;
+    justify-content: center;
+    
+    color: dimgray;
+    background-color: wheat;
+    
+    background-image: url("../images/needle-transparent.webp");
+    background-size: 5%;
+    background-repeat: repeat;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+    text-align: center;
+}
+
+body {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+
+    background-color: papayawhip;
+    border: thin solid dimgray;
+}
+
+h1 {
+    display: inline-block;
+    padding: 10px;
+    margin: 0;
+
+    background-color: white;
+    border: thin solid dimgray;
+}
+
+span {
+    font-size: larger;
+}
+
+p {
+    font-size: larger;
+}
+
+.radio-container {
+    margin: 20px;
+}
+
+.percentage-label {
+    position: relative;
+    bottom: 7px;
+    font-size: normal;
+}
+
+.slider {
+    -webkit-appearance: none;
+    border: thin solid dimgray;
+    background-color: papayawhip;
+    width: 75%;
+}
+
+
+.slider::-webkit-progress-bar, .slider::-moz-range-progress {
+    -webkit-appearance: none;
+    height: 100%;
+    background: wheat;
+}
+
+.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    height: 100%;
+    width: 5%;
+    border: thin solid dimgray;
+    border-radius: 0px;
+    background-color: white;
+}
+
+.slider::-moz-range-thumb:hover, .slider::-moz-range-thumb:active {
+    border-width: medium;
+}
+
+.slider::-webkit-slider-thumb:hover, .slider::-webkit-slider-thumb:active {
+    border-width: medium;
+}

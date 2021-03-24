@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="images/needle.webp">
+    <link href="styles/style.css" rel="stylesheet">
+    
+    <title>Vakcinační odpočet</title>
+  </head>
+
+
+  <body>
+    <h1>Vakcinační odpočet</h1>
+
+    <div class="radio-container">
+      <span>Průměrná rychlost očkování za</span><br>
+
+      <input type="radio" name="timescale" value="seven-days" id="seven-days" onchange="recalculate()" checked>
+      <label for="seven-days" style="margin-right: 20px;">posledních 7 dní</label>
+
+      <input type="radio" name="timescale" value="all-time" id="all-time" onchange="recalculate()">
+      <label for="all-time">celou dobu</label>
+    </div>
+
+    <hr>
+
+    <div class="answer-container">
+      <p>Za jak dlouho bude první dávkou naočkováno <span id="percentage">70 %</span> populace?</p>
+
+      <label for="percentage-slider" class="percentage-label">0 %</label>
+      <input type="range" min="0" max="100" value="70" oninput="recalculate()" class="slider" id="percentage-slider">
+      <label for="percentage-slider" class="percentage-label">100 %</label>
+
+      <p id="days" style="font-weight: bold;">N/A</p>
+    </div>
+    
+    <hr>
+
+    <footer>
+      <p id="date" style="font-size: x-small; display: flex; justify-content: center;"></p>
+      <small>&copy; 2021 Martin Blažek</small>
+    </footer> 
+
+    <script src="scripts/main.js"></script>
+    <script>
+      recalculate();
+      updateDate();
+    </script>
+  </body>
+</html>
