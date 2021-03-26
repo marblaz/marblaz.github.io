@@ -50,19 +50,26 @@ input[type=range] {
     border: thin solid dimgray;
 }
 
-input[type=range]::-moz-range-progress {
-    background-color: wheat;
-    height: 100%;
-}
+@supports (-moz-appearance:none) {
+    .percentage-label {
+        position: relative;
+        bottom: 4px;
+    }
 
-input[type=range]::-moz-range-thumb {
-    height: 100%;
-    width: 5%;
-    background-color: white;
-    border: thin solid dimgray;
-    border-radius: 0;
-}
-
-input[type=range]::-moz-range-thumb:active, input[type=range]::-moz-range-thumb:hover {
-    border-width: medium;
+    input[type=range]::-moz-range-progress {
+        background-color: wheat;
+        height: 100%;
+    }
+    
+    input[type=range]::-moz-range-thumb {
+        height: 100%;
+        width: 5%;
+        background-color: white;
+        border: thin solid dimgray;
+        border-radius: 0;
+    }
+    
+    input[type=range]::-moz-range-thumb:active, input[type=range]::-moz-range-thumb:hover {
+        border-width: medium;
+    }
 }

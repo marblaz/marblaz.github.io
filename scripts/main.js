@@ -1,4 +1,4 @@
-const updatedDate = "26. 3. 2021 v 12:21";
+const updatedDate = "26. 3. 2021 v 19:23";
 const vaccTotal = 1086121;
 const vaccSevenDays = 190811;
 const daysSinceStart = 89;
