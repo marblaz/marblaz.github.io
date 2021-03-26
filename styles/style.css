@@ -32,11 +32,7 @@ h1 {
     border: thin solid dimgray;
 }
 
-span {
-    font-size: larger;
-}
-
-p {
+p, span {
     font-size: larger;
 }
 
@@ -45,38 +41,28 @@ p {
 }
 
 .percentage-label {
-    position: relative;
-    bottom: 7px;
     font-size: normal;
 }
 
-.slider {
-    -webkit-appearance: none;
-    border: thin solid dimgray;
-    background-color: papayawhip;
+input[type=range] {
     width: 75%;
+    background-color: papayawhip;
+    border: thin solid dimgray;
 }
 
-
-.slider::-webkit-progress-bar, .slider::-moz-range-progress {
-    -webkit-appearance: none;
+input[type=range]::-moz-range-progress {
+    background-color: wheat;
     height: 100%;
-    background: wheat;
 }
 
-.slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
-    -webkit-appearance: none;
+input[type=range]::-moz-range-thumb {
     height: 100%;
     width: 5%;
-    border: thin solid dimgray;
-    border-radius: 0px;
     background-color: white;
+    border: thin solid dimgray;
+    border-radius: 0;
 }
 
-.slider::-moz-range-thumb:hover, .slider::-moz-range-thumb:active {
-    border-width: medium;
-}
-
-.slider::-webkit-slider-thumb:hover, .slider::-webkit-slider-thumb:active {
+input[type=range]::-moz-range-thumb:active, input[type=range]::-moz-range-thumb:hover {
     border-width: medium;
 }
