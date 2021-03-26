@@ -36,6 +36,14 @@ p, span {
     font-size: larger;
 }
 
+a {
+    color: darkgray;
+}
+
+a:hover {
+	color: dimgray;
+}
+
 .radio-container {
     margin: 20px;
 }
