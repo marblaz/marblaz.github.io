@@ -49,7 +49,7 @@ a:hover {
 }
 
 .percentage-label {
-    font-size: normal;
+    font-size: medium;
 }
 
 input[type=range] {
