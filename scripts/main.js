@@ -1,7 +1,7 @@
-const updatedDate = "5. 5. 2021 v 18:24";
-const vaccTotal = 2327091;
-const vaccSevenDays = 395885;
-const daysSinceStart = 129;
+const updatedDate = "7. 5. 2021 v 16:24";
+const vaccTotal = 2476421;
+const vaccSevenDays = 438648;
+const daysSinceStart = 131;
 const population = 10_700_155;
 
 function recalculate() {
